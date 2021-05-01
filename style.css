@@ -1,0 +1,91 @@
+body {
+    background-color: #000000;
+    color: lightgray;
+    font-size: 28px;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 700;
+}
+#board {
+    text-align: center;
+    font-size: 48px;
+    min-height: 60px;
+}
+#gallows {
+    text-align: center;
+    min-height: 180px;
+}
+#alphabet {
+    text-align: center;
+    min-height: 180px;
+}
+.letter {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    margin: 5px;
+    border: 3px solid gray;
+    float: left;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.letter:hover {
+    background-color: #222222;
+    color: white;
+    border: 3px solid white;
+}
+.reset {
+    color: green;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.reset:hover {
+    color: white;
+}
+
+/*  ############   Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px   ##############  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #board {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 10px !important;
+    }
+    .title {
+        margin-top: 20px !important;
+    }
+    #gallows img {
+        text-align: center;
+        width: 200px !important;
+        margin-bottom: -100px !important;
+        padding-bottom: 0px !important;
+    }
+    .category {
+        font-size: 1.2rem;
+    }
+    #alphabet {
+        padding: 0px !important;
+        font-size: 1.2rem;
+        margin-top: 5px !important;
+        margin-bottom: 15px !important;
+        text-align: center;
+        min-height: 180px;
+    }
+    .letter {
+        width: 38px;
+        height: 38px;
+        text-align: center;
+        margin: 5px;
+        padding: -10px !important;
+        border: 3px solid gray;
+        float: left;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+    .reset {
+        color: green;
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding-bottom: 50px !important;
+    }
+}
